@@ -1,0 +1,37 @@
+﻿@model Homepage.Models.ImageIndexViewModel
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Pictures</h2>
+
+@foreach (var section_ in Model.Sections)
+{
+    <h2>@section_.Title</h2>
+    foreach (var subSection in section_.SubSections)
+    {
+        <h3>@subSection.Title</h3>
+
+        <div class="image-list" style="visibility: hidden;">
+            @foreach (var image in subSection.Images)
+            {
+                <div class="image-list-item">
+                    <a class="fancybox" rel="group" href="@image.LargeSrc">
+                        <img src="@image.Src" />
+                    </a>
+                </div>
+            }
+            <div class="image-list-item-clear"></div>
+        </div>
+    }
+}
+
+@section scripts {
+    <script>
+        $(function () {
+            $('.fancybox').fancybox();
+            $('.image-list').css('visibility', 'visible');
+        });
+    </script>
+}

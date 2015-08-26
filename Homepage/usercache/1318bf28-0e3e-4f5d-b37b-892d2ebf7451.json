@@ -1,0 +1,17 @@
+{
+  "Email": "glennie.helles@gmail.com",
+  "EmailConfirmed": false,
+  "PasswordHash": "AOhW57WMF5pUGWneQ7xtbG9I2GW1j0znPZRYrUxxe+sumGDPJT3G32WkiWE6cDqOXg==",
+  "SecurityStamp": null,
+  "PhoneNumber": null,
+  "PhoneNumberConfirmed": false,
+  "TwoFactorEnabled": false,
+  "LockoutEndDateUtc": null,
+  "LockoutEnabled": true,
+  "AccessFailedCount": 0,
+  "Roles": [],
+  "Claims": [],
+  "Logins": [],
+  "Id": "1318bf28-0e3e-4f5d-b37b-892d2ebf7451",
+  "UserName": "glennie.helles@gmail.com"
+}
