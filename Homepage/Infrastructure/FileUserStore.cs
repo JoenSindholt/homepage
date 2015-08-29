@@ -9,7 +9,17 @@ namespace Homepage.Infrastructure
 {
     public class FileUserStore : IUserStore<ApplicationUser>, IUserPasswordStore<ApplicationUser>, IUserEmailStore<ApplicationUser>, IUserLockoutStore<ApplicationUser, string>, IUserTwoFactorStore<ApplicationUser, string>
     {
-        private string usercachePath = @"C:\Users\Joen\Documents\Projects\Homepage\Homepage\usercache";
+        private string _usercachePath;
+
+        public FileUserStore(string basePath)
+        {
+            _usercachePath = Path.Combine(basePath, "usercache");
+
+            if (!Directory.Exists(_usercachePath))
+            {
+                Directory.CreateDirectory(_usercachePath);
+            }
+        }
 
         public Task CreateAsync(ApplicationUser user)
         {
@@ -55,7 +65,7 @@ namespace Homepage.Infrastructure
         {
             return Task.Run(() =>
             {
-                var files = new DirectoryInfo(usercachePath).GetFiles();
+                var files = new DirectoryInfo(_usercachePath).GetFiles();
                 foreach (var file in files)
                 {
                     ApplicationUser user = JsonConvert.DeserializeObject<ApplicationUser>(File.ReadAllText(file.FullName));
@@ -73,7 +83,7 @@ namespace Homepage.Infrastructure
         {
             return Task.Run(() =>
             {
-                var files = new DirectoryInfo(usercachePath).GetFiles();
+                var files = new DirectoryInfo(_usercachePath).GetFiles();
                 foreach (var file in files)
                 {
                     ApplicationUser user = JsonConvert.DeserializeObject<ApplicationUser>(File.ReadAllText(file.FullName));
@@ -162,7 +172,7 @@ namespace Homepage.Infrastructure
 
         private string GetUserFilename(string userId)
         {
-            return Path.Combine(usercachePath, userId + ".json");
+            return Path.Combine(_usercachePath, userId + ".json");
         }
 
         public Task<DateTimeOffset> GetLockoutEndDateAsync(ApplicationUser user)

@@ -45,7 +45,8 @@ namespace Homepage
         {
             //var manager = new ApplicationUserManager(new UserStore<ApplicationUser>(context.Get<ApplicationDbContext>()));
 
-            var manager = new ApplicationUserManager(new FileUserStore());
+            string basePath = ((HttpContextWrapper)context.Environment["System.Web.HttpContextBase"]).Server.MapPath("~/");
+            var manager = new ApplicationUserManager(new FileUserStore(basePath));
 
             // Configure validation logic for usernames
             manager.UserValidator = new UserValidator<ApplicationUser>(manager)
