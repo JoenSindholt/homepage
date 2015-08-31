@@ -240,6 +240,7 @@
     <Content Include="Content\site.scss" />
     <Content Include="Content\_frontpage.scss" />
     <Content Include="Content\site.css.map" />
+    <None Include="Properties\PublishProfiles\Release.pubxml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\freewall.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
