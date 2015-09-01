@@ -46,7 +46,8 @@ a:hover {
   padding: 0; }
 
 .navbar {
-  border-bottom: 1px solid #2ec4b6; }
+  border-bottom: 1px solid #2ec4b6;
+  background: white; }
 
 /* Coolors Exported Palette - coolors.co/011627-fdfffc-2ec4b6-e71d36-ff9f1c */
 .frontpage .jumbotron {
