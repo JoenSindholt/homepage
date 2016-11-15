@@ -20,9 +20,10 @@ button {
 }
 
 .intro {
-  background: url('/resources/background/3022.jpg') no-repeat;
+  background: url('/resources/background/triangles-2.svg') no-repeat;
   background-size: cover;
   color: white;
+  height: 100vh;
 }
 
 nav {
