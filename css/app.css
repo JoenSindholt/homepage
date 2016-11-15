@@ -7,32 +7,42 @@ body {
   padding: 0;
   margin: 0;
   color: #7d7d7d;
+  background: #fbfbfb;
 }
 
-button {
-  border: 2px solid #7d7d7d;
-  background: inherit;
-  font-size: 80%;
-  color: inherit;
+button, a.button {
+  border: 1px solid rgba(255, 255, 255, .5);
+  background: transparent;
+  transition: background .3s;
+  font-size: .8rem;
+  font-weight: 400;
+  color: white;
   padding: 10px 20px;
   text-transform: uppercase;
   letter-spacing: 1.5px;
+  outline: none;
+  cursor: pointer;
+  user-select:none;
+  text-decoration: none;
+}
+
+button:hover {
+  background: rgba(0, 0, 0, .2);
+}
+
+button:active {
+  transform: scale(.97, .97);
 }
 
 .intro {
   background: url('/resources/background/triangles-2.svg') no-repeat;
   background-size: cover;
-  color: white;
-  height: 100vh;
+  color: #fbfbfb;
 }
 
 nav {
   padding: 0;
   width: 100%;
-}
-
-nav button {
-  border: 1px solid rgba(255, 255, 255, .5);
 }
 
 .nav-content {
@@ -69,19 +79,15 @@ nav ul.links li {
   font-weight: 300;
 }
 
-.jumbotron button {
-  border: 1px solid rgba(255, 255, 255, .5);
-  margin-top: 30px;
+.jumbotron .text {
+  margin-bottom: 70px;
 }
 
-.jumbotron .readmore {
-  font-family: 'Parisienne', cursive;
-  font-size: 24px;
-  padding: 40px 0;
+.jumbotron .technologies {
+  font-size: .9rem;
 }
 
 section {
-  background: white;
   padding: 0;
   min-height: 300px;
 }
@@ -89,7 +95,39 @@ section {
 section h2 {
   font-family: 'Parisienne', cursive;
   color: #1f498a;
-  font-size: 200%;
+  font-size: 2rem;
   text-align: center;
   margin: 20px;
 }
+
+footer {
+  background: #16375f;
+  padding: 40px 10px;
+  text-align: center;
+  font-size: .9rem;
+}
+
+footer, footer a {
+  color: rgba(255, 255, 255, .6);
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+footer h3 {
+  color: white;
+  font-weight: 300;
+  margin: 0 0 15px 0;
+}
+
+footer a.icon {
+  opacity: .8;
+  padding: 0 3px;
+}
+
+footer a.icon:hover {
+  text-decoration: none;
+}
+
