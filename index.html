@@ -1,68 +1,280 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>sindholt-freelance.dk</title>
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/app.css">
-  </head>
-  <body>
-    <div class="intro"> 
-      <nav>
-        <div class="nav-content">
-          <div class="logo">Sindholt Freelance</div>
-          <div class="right">
-            <ul class="links">
-              <li>About</li>
-              <li>Projects</li>
-            </ul>
-            <button>Contact me</button>
-          </div>
-        </div>
-      </nav>
-      <div class="jumbotron">
-          <h1>Sindholt Freelance</h1>
-          <div class="text">
-            <p>Hi, I'm Joen Sindholt - a freelance .NET/C# web application developer located in Charlottenlund, Denmark</p>
-            <p class="technologies">.NET/C# - ASP.NET MVC/WebApi - Entity Framework - SQL Server - WCF - jQuery - AngularJS - HTML - CSS...</p>
-          </div>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>sindholt-freelance.dk</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/app.css">
+</head>
+
+<body>
+  <div class="intro">
+    <nav>
+      <div class="nav-content">
+        <div class="logo">Sindholt Freelance</div>
+        <div class="right">
+          <ul class="links">
+            <li><a href="#resume">Resume</a></li>
+            <li><a href="#competences">Competences</a></li>
+            <li><a href="#projects">Projects</a></li>
+          </ul>
           <a href="#contact" class="button">Contact me</a>
+        </div>
       </div>
+    </nav>
+    <div class="jumbotron">
+      <h1>Sindholt Freelance</h1>
+      <div class="text">
+        <p>Hi, I'm Joen Sindholt - a freelance .NET/C# web application developer located in Charlottenlund, Denmark</p>
+        <p class="technologies">.NET/C# - ASP.NET MVC/WebApi - Entity Framework - SQL Server - WCF - jQuery - AngularJS - HTML - CSS...</p>
+      </div>
+      <a href="#contact" class="button">Contact me</a>
     </div>
-    <div class="content">
-      <section>
-        <h2>Competences</h2>
-        <table>
-          <tbody>
-            <tr>
-              <td>.NET</td>
-              <td>Expert</td>
-              <td>...</td>
-            </tr>
-          </tbody>
-        </table>
-      </section>
-    </div>
-      <footer id="contact">
-        <h3>Sindholt Freelance</h3>
-        Joen Sindholt<br/>
-        Høstvej 32<br/>
-        2920 Charlottenlund<br/>
-        CVR: 38 12 67 25<br/>
-        <br/>
-        phone: <a href="tel:+4551804599">+45 51804599</a><br/>
-        email: <a href="mailto:joensindholt@gmail.com">joensindholt@gmail.com</a><br/>
-        <br/>
-        <a href="https://github.com/joensindholt" target="_blank" title="Github - Joen Sindholt" class="icon">
-          <img src="/resources/icons/github.svg" width="32" height="32" />
-        </a>
-        <a href="https://www.linkedin.com/in/joen-sindholt-0518408" target="_blank" title="LinkedIn - Joen Sindholt" class="icon">
-          <img src="/resources/icons/linkedin.svg" width="32" height="32" />
-        </a>
-      </footer>
-  </body>
+  </div>
+  <div class="content">
+    <section id="resume">
+      <h2>Resume</h2>
+      <div class="narrow-text-box">
+        <p>I'm a Senior Full Stack .NET/C# (ASP.NET) system developer and system designer with expert competences in backend
+          development and system integration.</p>
+        <p>I have more than 10 years of experience in ASP.NET development - including MVC up to 2014 - and with present time
+          focus om ASP.NET Web API.</p>
+        <p>Furthermore, I have worked intensively with frontend development throughout my career primarily using JavaScript
+          (jQuery), HTML(5), CSS(3) and recently using modern frontend technologies like AngularJS, Gulp, Bower, SASS and
+          NPM. </p>
+        <p>I'm a natural technical lead with a proven ability to challenge, lead and understand business end-to-end process
+          and bridging them towards workable IT solutions.</p>
+      </div>
+    </section>
+    <section id="competences" class="text-center">
+      <h2>Competences</h2>
+      <div class="row competence-row">
+        <div class="col-sm-4">
+          <h3>Frontend</h3>
+          <p>HTML</p>
+          <p>CSS</p>
+          <p>Javascript</p>
+          <p>AngularJS</p>
+          <p>jQuery</p>
+          <p>TypeScript</p>
+          <p>Bootstrap</p>
+          <p>NPM, Gulp, Bower</p>
+        </div>
+        <div class="col-sm-4">
+          <h3>Backend</h3>
+          <p>C#</p>
+          <p>ASP.NET MVC</p>
+          <p>Entity Framework</p>
+          <p>SQL Server</p>
+          <p>Web Services</p>
+          <p>AWS</p>
+        </div>
+        <div class="col-sm-4">
+          <h3>Others</h3>
+          <p>Enterprise Architecture</p>
+          <p>Patterns and Practices</p>
+          <p>Unit testing</p>
+          <p>Agile Programming</p>
+          <p>Scrum</p>
+          <p>Git, SVN</p>
+        </div>
+      </div>
+    </section>
+    <section id="projects">
+      <h2>Projects &amp; Positions</h2>
+      <div class="timeline">
+        <div class="timeline__end">
+          <div class="timeline__end-inner"></div>
+        </div>
+        <div class="timeline__line">
+        </div>
+        <div class="timeline__entries">
+          <div class="timeline__entry">
+            <div class="timeline__bullet">
+              <div class="timeline__bullet-inner"></div>
+            </div>
+            <div class="timeline__content">
+              <h5>SimpleSite A/S</h5>
+              <div class="timeline__period">2015/01 - 2016/11</div>
+              <p>
+                Full Stack .NET/C# Developer with lead role in backend ASP.NET WebApi development and frontend development using AngularJS
+              </p>
+              <div class="timeline__technologies">
+                .NET/C# ASP.NET WebApi, SQL Server, ASP.NET WebForms, AngularJS, TypeScript, NPM, Gulp, Bower, NodeJS, Git/GitHub, SASS,
+                NUnit, Backbone, jQuery, REST API, HTML5, CSS3, JavaScript
+              </div>
+            </div>
+          </div>
+          <div class="timeline__entry">
+            <div class="timeline__bullet">
+              <div class="timeline__bullet-inner"></div>
+            </div>
+            <div class="timeline__content">
+              <h5>Development Goals System for Københavns Kommune (at KnowledgeCube)</h5>
+              <div class="timeline__period">2013/02 - 2014/12</div>
+              <p>
+                .NET/C# System Architect, Designer and Developer responsible for analyzing, designing and developing a development goals
+                system for Københavns Kommune.
+              </p>
+              <div class="timeline__technologies">
+                .NET, C#, ASP.NET MVC 4, WCF Web Services, Entity Framework, SQL Server, jQuery, Bootstrap, HTML5, CSS3, JavaScript, Less,
+                Scrum, MSTest, Microsoft Visual Studio, Team Foundation Server
+              </div>
+            </div>
+          </div>
+          <div class="timeline__entry">
+            <div class="timeline__bullet">
+              <div class="timeline__bullet-inner"></div>
+            </div>
+            <div class="timeline__content">
+              <h5>Course administration for Københavns Kommune (at KnowledgeCube)</h5>
+              <div class="timeline__period">2012/09 - 2013/06</div>
+              <p>
+                .NET/C# System Architect, Designer and Developer responsible for analyzing, designing and developing a course administration
+                system for Københavns Kommune.
+              </p>
+              <div class="timeline__technologies">
+                .NET, C#, ASP.NET MVC 4, WCF Web Services, Entity Framework, SQL Server, jQuery, Bootstrap, HTML5, CSS3, JavaScript, Less,
+                Scrum, MSTest, Microsoft Visual Studio, Team Foundation Server
+              </div>
+            </div>
+          </div>
+          <div class="timeline__entry">
+            <div class="timeline__bullet">
+              <div class="timeline__bullet-inner"></div>
+            </div>
+            <div class="timeline__content">
+              <h5>Wage Subsidies Administration for Københavns Kommune (at KnowledgeCube)</h5>
+              <div class="timeline__period">2012/09 - 2013/06</div>
+              <p>
+                .NET/C# System developer focusing on analyzing, designing and developing a Wage Subsidies System for Københavns Kommune.
+              </p>
+              <div class="timeline__technologies">
+                .NET, C#, ASP.NET MVC 4, WCF Web Services, Entity Framework, SQL Server, jQuery, Bootstrap, HTML5, CSS3, JavaScript, Less,
+                Scrum, MSTest, Microsoft Visual Studio, Team Foundation Server
+              </div>
+            </div>
+          </div>
+          <div class="timeline__entry">
+            <div class="timeline__bullet">
+              <div class="timeline__bullet-inner"></div>
+            </div>
+            <div class="timeline__content">
+              <h5>Course Administration System for AK-Samvirke (at cBrain)</h5>
+              <div class="timeline__period">2011/05 - 2011/10</div>
+              <p>
+                .NET/C# System Designer and Developer responsible for developing a course administration system for AK-Samvirke 
+              </p>
+              <div class="timeline__technologies">
+                .NET, C#, ASP.NET WebForms, SQL Server, jQuery, HTML, CSS, JavaScript, Microsoft Visual Studio
+              </div>
+            </div>
+          </div>
+          <div class="timeline__entry">
+            <div class="timeline__bullet">
+              <div class="timeline__bullet-inner"></div>
+            </div>
+            <div class="timeline__content">
+              <h5>Meeting Booking System for AK-Samvirke (at cBrain)</h5>
+              <div class="timeline__period">2011/01 - 2011/05</div>
+              <p>
+                .NET/C# System Designer and Developer responsible for developing a meeting booking system for AK-Samvirke
+              </p>
+              <div class="timeline__technologies">
+                .NET, C#, ASP.NET WebForms, SQL Server, jQuery, HTML, CSS, JavaScript, Microsoft Visual Studio
+              </div>
+            </div>
+          </div>
+          <div class="timeline__entry">
+            <div class="timeline__bullet">
+              <div class="timeline__bullet-inner"></div>
+            </div>
+            <div class="timeline__content">
+              <h5>Questionaire System for Danske Konferencecentre (at cBrain)</h5>
+              <div class="timeline__period">2010/06 - 2011/01</div>
+              <p>
+                .NET/C# System Designer and Developer responsible for designing and developing a questionaire system for Danske Konferencecentre 
+              </p>
+              <div class="timeline__technologies">
+                .NET, C#, ASP.NET WebForms, SQL Server, jQuery, HTML, CSS, JavaScript, Microsoft Visual Studio
+              </div>
+            </div>
+          </div>
+          <div class="timeline__entry">
+            <div class="timeline__bullet">
+              <div class="timeline__bullet-inner"></div>
+            </div>
+            <div class="timeline__content">
+              <h5>Project Portfolio Management system for Ernst &amp; Young (at cBrain)</h5>
+              <div class="timeline__period">2010/03 - 2010/06</div>
+              <p>
+                .NET/C# System Designer and Developer responsible for designing and developing a questionaire system for Danske Konferencecentre 
+              </p>
+              <div class="timeline__technologies">
+                .NET, C#, ASP.NET WebForms, SQL Server, jQuery, HTML, CSS, JavaScript, Microsoft Visual Studio
+              </div>
+            </div>
+          </div>
+          <div class="timeline__entry">
+            <div class="timeline__bullet">
+              <div class="timeline__bullet-inner"></div>
+            </div>
+            <div class="timeline__content">
+              <h5>Student Accommodation Registration System for Kollegiernes Kontor i København (at cBrain)</h5>
+              <div class="timeline__period">2009/05 - 2010/03</div>
+              <p>
+                .NET/C# System Designer and Developer responsible for designing and developing a student accommodation registration system for Kollegiernes Kontor i København
+              </p>
+              <div class="timeline__technologies">
+                .NET, C#, ASP.NET WebForms, SQL Server, jQuery, HTML, CSS, JavaScript, Microsoft Visual Studio
+              </div>
+            </div>
+          </div>
+          <div class="timeline__entry">
+            <div class="timeline__bullet">
+              <div class="timeline__bullet-inner"></div>
+            </div>
+            <div class="timeline__content">
+              <h5>Electronic invoice handling system for Menighedernes Daginstitutioner (at cBrain)</h5>
+              <div class="timeline__period">2009/01 - 2009/05</div>
+              <p>
+                .NET/C# System Designer and Developer responsible for designing and developing a electronic invoice handling system for Menighedernes Daginstitutioner 
+              </p>
+              <div class="timeline__technologies">
+                .NET, C#, ASP.NET WebForms, SQL Server, jQuery, HTML, CSS, JavaScript, Microsoft Visual Studio
+              </div>
+            </div>
+          </div>
+          <div class="timeline__clear"></div>
+        </div>
+      </div>
+      <div class="timeline__dots">
+        <div class="timeline__dot"></div>
+        <div class="timeline__dot"></div>
+        <div class="timeline__dot"></div>
+      </div>
+  </div>
+  </section>
+
+  </div>
+  <footer id="contact">
+    <h3>Sindholt Freelance</h3>
+    Joen Sindholt<br/> Høstvej 32<br/> 2920 Charlottenlund<br/> CVR: 38 12 67 25<br/>
+    <br/> phone: <a href="tel:+4551804599">+45 51804599</a><br/> email: <a href="mailto:joensindholt@gmail.com">joensindholt@gmail.com</a><br/>
+    <br/>
+    <a href="https://github.com/joensindholt" target="_blank" title="Github - Joen Sindholt" class="icon">
+      <img src="/resources/icons/github.svg" width="32" height="32" />
+    </a>
+    <a href="https://www.linkedin.com/in/joen-sindholt-0518408" target="_blank" title="LinkedIn - Joen Sindholt" class="icon">
+      <img src="/resources/icons/linkedin.svg" width="32" height="32" />
+    </a>
+  </footer>
+</body>
+
 </html>
